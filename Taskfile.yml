@@ -1,0 +1,23 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - go build -o tempted cmd/tempted/main.go
+    generates:
+      - tempted
+    silent: false
+
+  clean:
+    cmds:
+      - rm tempted
+
+  test:
+    cmds:
+      - echo go test something
+    silent: false
+
+  default:
+    cmds:
+      - task: test
+      - task: build

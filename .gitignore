@@ -1,0 +1,6 @@
+/tempted
+tempted.log
+mock.go
+.task
+dist/
+.DS_Store
