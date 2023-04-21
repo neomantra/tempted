@@ -8,6 +8,27 @@
 
 ```
 $ tempted --help
+
+tempted is a terminal application for Temporal. It is used to
+view workflows, and more, all from the terminal in a productivity-focused UI.
+
+Usage:
+  tempted [flags]
+  tempted [command]
+
+Available Commands:
+  completion  Generate the autocompletion script for the specified shell
+  help        Help about any command
+  serve       Start ssh server for tempted
+
+Flags:
+  -a, --address string     Nomad address. Default "localhost:7233"
+  -c, --config string      Config file path. Default "$HOME/.tempted.yaml"
+      --help               Print usage
+  -n, --namespace string   Temporal namespace. Default "default"
+  -u, --update string      Seconds between updates for workflow pages. Disable with "-1". Default "5"
+  -v, --version            version for tempted
+
 ```
 
 ## Environment Variables
@@ -15,7 +36,7 @@ $ tempted --help
 The following environment variables affect program runtime:
 
 | Name  | Default | Description |
-| --- | --- |
+| --- | --- | --- |
 | `TEMPORAL_CLI_ADDRESS` |"localhost:7233:7234" | `host:port` for Temporal frontend service |
 
 ## Installing
@@ -27,14 +48,6 @@ You can also install for various platforms with [Homebrew](https://brew.sh) from
 ```
 brew tap neomantra/homebrew-tap
 brew install neomantra/homebrew-tap/tempted
-```
-
-----
-
-## Example Usage
-
-```
-TODO
 ```
 
 ----
