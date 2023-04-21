@@ -39,6 +39,14 @@ TODO
 
 ----
 
+## SSH App
+
+`tempted` can be served via ssh application. For example, you could host an internal ssh application for your company such that anyone on the internal network can `ssh -p <your-port> <your-host>` and immediately access `tempted` without installing or configuring anything.
+
+Serve the ssh app with `tempted serve`.
+
+----
+
 ## Building
 
 Building is performed with [task](https://taskfile.dev/):
@@ -51,7 +59,9 @@ $ task
 
 ## Credits and License
 
-This software is released with the same license as [Temporal](https://github.com/temporalio/temporal/blob/master/LICENSE), with gratitude to and no affiliation with [Temporal.io](https://temporal.io) and [Charm.sh](https://charm.sh).  Inspired by [`wander`](https://github.com/robinovitch61/wander), which is the same thing for Nomad.
+This Text Application is not only inspired by [`wander`](https://github.com/robinovitch61/wander), a similar tool for [HashiCorp Nomad](https://nomadproject.io).  The entire initial implementation was copied, then I ported an initial spike working in a few hours!
+
+This software is released with the same license as [Temporal](https://github.com/temporalio/temporal/blob/master/LICENSE), with gratitude to and no affiliation with [Temporal.io](https://temporal.io) and [Charm.sh](https://charm.sh) and [robinovitch61](https://github.com/robinovitch61).  
 
 Copyright (c) 2023 [Neomantra BV](https://www.neomantra.com).  Authored by Evan Wies.
 

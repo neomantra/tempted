@@ -1,9 +1,15 @@
 version: '3'
 
 tasks:
+  tidy:
+    cmds:
+      - go mod tidy
+
   build:
     cmds:
-      - go build -o tempted cmd/tempted/main.go
+      - go build -o tempted
+    deps:
+      - tidy
     generates:
       - tempted
     silent: false

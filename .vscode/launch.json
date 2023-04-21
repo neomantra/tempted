@@ -5,11 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach to remote tempted",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "port": 8420
+        },
+        {
             "name": "tempted",
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/cmd/tempted",
+            "program": "${workspaceFolder}/main.go",
+            "env": {
+                "TEMPORAL_CLI_ADDRESS": "10.0.44.52:21495"
+            },
+            "args": [
+                "serve"
+            ]
         }
     ]
 }
