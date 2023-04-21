@@ -47,7 +47,7 @@ You can also install for various platforms with [Homebrew](https://brew.sh) from
 
 ```
 brew tap neomantra/homebrew-tap
-brew install neomantra/homebrew-tap/tempted
+brew install tempted
 ```
 
 ----
